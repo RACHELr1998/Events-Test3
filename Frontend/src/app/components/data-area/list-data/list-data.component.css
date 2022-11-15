@@ -1,0 +1,39 @@
+table {
+    margin: auto;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+tr {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(12, 136, 101);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(20, 151, 20);
+    color: azure;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgreen;
+    color: rgb(12, 136, 101);
+}
+
+thead>tr:first-child {
+    background-color: rgb(229, 224, 224);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(7, 88, 65);
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+<div>
+    <form (ngSubmit)="send()" [noValidate]="false">
+
+        <h4>Add Event</h4>
+
+        <label>Type Event:</label>
+        <br />
+        <select name="eventTypeId" [(ngModel)]="event.eventTypeId" required>
+            <option value="" disabled selected>Select...</option>
+            <option *ngFor="let t of eventsTypes" [value]="t._id">{{t.eventTypeName}}</option>
+        </select>
+        <br />
+
+        <label>Date&Time:</label>
+        <input type="datetime-local" name="eventDateTime" [(ngModel)]="event.eventDateTime" required />
+
+        <label>Description:</label>
+        <input type="text" name="description" [(ngModel)]="event.description" required minlength="2" maxlength="100" />
+
+        <label>Address:</label>
+        <input type="text" name="address" [(ngModel)]="event.address" required minlength="2" maxlength="100" />
+
+        <label>Participants:</label>
+        <input type="number" name="participants" [(ngModel)]="event.participants" required min="5" max="1000" />
+
+        <button>Add</button>
+    </form>
+</div>

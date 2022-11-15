@@ -1,0 +1,34 @@
+<div>
+
+    <div>
+        <select (change)="getEvent($event)">
+            <option value="" disabled selected>Select...</option>
+            <option *ngFor="let t of eventsTypes" [value]="t._id">{{t.eventTypeName}}</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date&Time</th>
+                <th>Description</th>
+                <th>Address</th>
+                <th>Participants</th>
+                <th>Delete</th>
+                <th>Is Passed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of events">
+                <td>{{e.eventDateTime | date:"d/M/Y HH:mm"}}</td>
+                <td>{{e.description}}</td>
+                <td>{{e.address}}</td>
+                <td>{{e.participants}}</td>
+                <td><button (click)="deleteEvent(e._id)">❌</button></td>
+                <td *ngIf="isPassed(e.eventDateTime)">The event has already passed</td>
+                <td *ngIf="!isPassed(e.eventDateTime)">The event has not yet passed</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

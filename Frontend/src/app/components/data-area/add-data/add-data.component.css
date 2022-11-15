@@ -1,0 +1,27 @@
+form {
+    width: 250px;
+    border: rgb(7, 88, 65) 2px solid;
+    padding: 10px;
+    margin: auto;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: gray 10px 10px 10px;
+}
+
+select, input, button {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+label {
+    color:rgb(7, 88, 65);
+    font-size: medium;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h4 {
+    text-align: center;
+    color: rgb(7, 88, 65);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
