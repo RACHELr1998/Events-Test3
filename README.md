@@ -2,7 +2,7 @@
 Events-Test - Full Stack Web App (MongoDB, Node.js and Angular)
 
 # Dependencies:
-react: ^18.2.0
+angular: ^14.2.0
 
 MongoDB with Compass
 
